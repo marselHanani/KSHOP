@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\marselhanane\\Documents\\KASHOP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F0E77521-F78D-4C92-91C2-40DF5ED80CF7}|KASHOP.BLL\\KASHOP.BLL.csproj|c:\\users\\marselhanane\\documents\\kashop\\kashop.bll\\service\\classes\\brandservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0E77521-F78D-4C92-91C2-40DF5ED80CF7}|KASHOP.BLL\\KASHOP.BLL.csproj|solutionrelative:kashop.bll\\service\\classes\\brandservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BrandService.cs",
+              "DocumentMoniker": "C:\\Users\\marselhanane\\Documents\\KASHOP\\KASHOP.BLL\\Service\\classes\\BrandService.cs",
+              "RelativeDocumentMoniker": "KASHOP.BLL\\Service\\classes\\BrandService.cs",
+              "ToolTip": "C:\\Users\\marselhanane\\Documents\\KASHOP\\KASHOP.BLL\\Service\\classes\\BrandService.cs",
+              "RelativeToolTip": "KASHOP.BLL\\Service\\classes\\BrandService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T07:14:21.013Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

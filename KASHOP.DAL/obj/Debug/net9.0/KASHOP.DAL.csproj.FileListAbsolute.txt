@@ -1,0 +1,13 @@
+C:\Users\marselhanane\Documents\KASHOP\KASHOP.DAL\bin\Debug\net9.0\KASHOP.DAL.deps.json
+C:\Users\marselhanane\Documents\KASHOP\KASHOP.DAL\bin\Debug\net9.0\KASHOP.DAL.dll
+C:\Users\marselhanane\Documents\KASHOP\KASHOP.DAL\bin\Debug\net9.0\KASHOP.DAL.pdb
+C:\Users\marselhanane\Documents\KASHOP\KASHOP.DAL\obj\Debug\net9.0\KASHOP.DAL.csproj.AssemblyReference.cache
+C:\Users\marselhanane\Documents\KASHOP\KASHOP.DAL\obj\Debug\net9.0\KASHOP.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marselhanane\Documents\KASHOP\KASHOP.DAL\obj\Debug\net9.0\KASHOP.DAL.AssemblyInfoInputs.cache
+C:\Users\marselhanane\Documents\KASHOP\KASHOP.DAL\obj\Debug\net9.0\KASHOP.DAL.AssemblyInfo.cs
+C:\Users\marselhanane\Documents\KASHOP\KASHOP.DAL\obj\Debug\net9.0\KASHOP.DAL.csproj.CoreCompileInputs.cache
+C:\Users\marselhanane\Documents\KASHOP\KASHOP.DAL\obj\Debug\net9.0\KASHOP.DAL.sourcelink.json
+C:\Users\marselhanane\Documents\KASHOP\KASHOP.DAL\obj\Debug\net9.0\KASHOP.DAL.dll
+C:\Users\marselhanane\Documents\KASHOP\KASHOP.DAL\obj\Debug\net9.0\refint\KASHOP.DAL.dll
+C:\Users\marselhanane\Documents\KASHOP\KASHOP.DAL\obj\Debug\net9.0\KASHOP.DAL.pdb
+C:\Users\marselhanane\Documents\KASHOP\KASHOP.DAL\obj\Debug\net9.0\ref\KASHOP.DAL.dll
