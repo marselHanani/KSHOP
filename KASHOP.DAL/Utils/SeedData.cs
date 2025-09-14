@@ -41,9 +41,9 @@ namespace KASHOP.DAL.Utils
             if (!await _context.Brands.AnyAsync())
             {
                 await _context.Brands.AddRangeAsync(
-                    new Models.Brand { Name = "Samsung", CreatedAt = DateTime.Now, Status = Models.Status.Active },
-                    new Models.Brand { Name = "Apple", CreatedAt = DateTime.Now, Status = Models.Status.Active },
-                    new Models.Brand { Name = "Nike", CreatedAt = DateTime.Now, Status = Models.Status.Active }
+                    new Models.Brand { Name = "Samsung", CreatedAt = DateTime.Now, Status = Models.Status.Active,ImageUrl = "3a470a9a-ee2a-4a95-bb8a-f020a4dcbe0b.jpg"},
+                    new Models.Brand { Name = "Apple", CreatedAt = DateTime.Now, Status = Models.Status.Active,ImageUrl = "92bd52bd-9230-4fe8-b8e0-32d8c9b7bb1d.jpg"},
+                    new Models.Brand { Name = "Nike", CreatedAt = DateTime.Now, Status = Models.Status.Active,ImageUrl = "fb41a151-3490-4220-9923-55ad3028d27b.jpg"}
                 );
                 await _context.SaveChangesAsync();
             }

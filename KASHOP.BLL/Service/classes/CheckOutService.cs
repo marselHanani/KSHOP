@@ -44,6 +44,7 @@ namespace KASHOP.BLL.Service.classes
                 order.Status = OrderStatusEnum.Approved;
                 var carts = await _repo.GetUserCart(order.UserId);
                 var orderItems = new List<OrderItem>();
+                var productsUpdate = new List<(int productId, int quantity)>();
                 foreach (var item in carts)
                 {
                     var orderItem = new OrderItem
@@ -55,10 +56,11 @@ namespace KASHOP.BLL.Service.classes
                         Count = item.Count,
                     };
                     orderItems.Add(orderItem);
-                    await _productRepo.DecreaseQuantity(item.ProductId, item.Count);
+                    productsUpdate.Add((item.ProductId, item.Count));
                 }
                 await _orderitemRepo.AddRangeAsync(orderItems);
                 await _repo.ClearCartAsync(order.UserId);
+                await _productRepo.DecreaseQuantity(productsUpdate);
                 body = $"<h1>Payment Successful- KSHOP</h1><p>Your payment for order {order.Id} has been processed successfully.</p>";
             }
             await _email.SendEmailAsync(order.User.Email, subject, body);

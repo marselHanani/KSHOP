@@ -1,0 +1,16 @@
+/home/marselhanani/Desktop/KSHOP/KASHOP.BLL/bin/Release/net9.0/KASHOP.BLL.deps.json
+/home/marselhanani/Desktop/KSHOP/KASHOP.BLL/bin/Release/net9.0/KASHOP.BLL.dll
+/home/marselhanani/Desktop/KSHOP/KASHOP.BLL/bin/Release/net9.0/KASHOP.BLL.pdb
+/home/marselhanani/Desktop/KSHOP/KASHOP.BLL/bin/Release/net9.0/KASHOP.DAL.dll
+/home/marselhanani/Desktop/KSHOP/KASHOP.BLL/bin/Release/net9.0/KASHOP.DAL.pdb
+/home/marselhanani/Desktop/KSHOP/KASHOP.BLL/obj/Release/net9.0/KASHOP.BLL.csproj.AssemblyReference.cache
+/home/marselhanani/Desktop/KSHOP/KASHOP.BLL/obj/Release/net9.0/KASHOP.BLL.GeneratedMSBuildEditorConfig.editorconfig
+/home/marselhanani/Desktop/KSHOP/KASHOP.BLL/obj/Release/net9.0/KASHOP.BLL.AssemblyInfoInputs.cache
+/home/marselhanani/Desktop/KSHOP/KASHOP.BLL/obj/Release/net9.0/KASHOP.BLL.AssemblyInfo.cs
+/home/marselhanani/Desktop/KSHOP/KASHOP.BLL/obj/Release/net9.0/KASHOP.BLL.csproj.CoreCompileInputs.cache
+/home/marselhanani/Desktop/KSHOP/KASHOP.BLL/obj/Release/net9.0/KASHOP.BLL.sourcelink.json
+/home/marselhanani/Desktop/KSHOP/KASHOP.BLL/obj/Release/net9.0/KASHOP.BLL.csproj.Up2Date
+/home/marselhanani/Desktop/KSHOP/KASHOP.BLL/obj/Release/net9.0/KASHOP.BLL.dll
+/home/marselhanani/Desktop/KSHOP/KASHOP.BLL/obj/Release/net9.0/refint/KASHOP.BLL.dll
+/home/marselhanani/Desktop/KSHOP/KASHOP.BLL/obj/Release/net9.0/KASHOP.BLL.pdb
+/home/marselhanani/Desktop/KSHOP/KASHOP.BLL/obj/Release/net9.0/ref/KASHOP.BLL.dll
