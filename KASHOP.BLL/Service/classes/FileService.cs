@@ -24,5 +24,21 @@ namespace KASHOP.BLL.Service.classes
             }
             throw new Exception("err");
         }
+
+        public async Task<List<string>> UploadManyAsync(List<IFormFile> files)
+        {
+            var fileNames = new List<string>();
+            foreach (var file in files)
+            {
+                var fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+                var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", fileName);
+                using (var stream = File.Create(filePath))
+                {
+                    await file.CopyToAsync(stream);
+                }
+                fileNames.Add(fileName);
+            }
+            return fileNames;
+        }
     }
 }

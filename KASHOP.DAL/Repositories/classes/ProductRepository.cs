@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using KASHOP.DAL.DTO.Response;
 
 namespace KASHOP.DAL.Repositories.classes
 {
@@ -33,6 +34,13 @@ namespace KASHOP.DAL.Repositories.classes
                 product.Quantity -= item.count;
             }
             await _context.SaveChangesAsync();
+        }
+
+        public async Task<List<Product>> GetAllProductsWithImages()
+        {
+            var products = await _context.Products
+                .Include(p => p.subImages).ToListAsync();
+            return products;
         }
     }
 }

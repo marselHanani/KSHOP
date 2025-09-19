@@ -57,7 +57,8 @@ namespace KASHOP.PL
             builder.Services.AddScoped<ICheckOutRepository, CheckOutRepository>();
             builder.Services.AddScoped<IOrderRepository, OrderRepository>();
             builder.Services.AddScoped<IOrderItemRepository, OrderItemRepository>();
-
+            builder.Services.AddScoped<IUserService, UserService>();
+            builder.Services.AddScoped<IUserRepository, UserRepository>();
             builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
 
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>

@@ -649,6 +649,7 @@
       "System.Threading.Tasks.Extensions/4.5.4": {},
       "KASHOP.DAL/1.0.0": {
         "dependencies": {
+          "Mapster": "7.4.0",
           "Microsoft.AspNetCore.Http.Features": "5.0.17",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.8",
           "Microsoft.EntityFrameworkCore": "9.0.9",

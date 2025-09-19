@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 
 namespace KASHOP.BLL.Service.classes
 {
@@ -33,7 +34,32 @@ namespace KASHOP.BLL.Service.classes
                 entity.MainImage = imagePath;
             }
 
+            if (productRequest.subImages != null)
+            {
+                var subImagesPaths = await _fileService.UploadManyAsync(productRequest.subImages);
+                entity.subImages = subImagesPaths.Select(img => new ProductImage { ImageName = img }).ToList();
+
+            }
+
             return _productRepository.save(entity);
+        }
+
+        public async Task<List<ProductResponse>> GetAllProduct(HttpRequest httpRequest,bool onlyActive = false)
+        {
+            var products = await _productRepository.GetAllProductsWithImages();
+            if (onlyActive)
+            {
+                products = products.Where(p => p.Status == Status.Active).ToList();
+            }
+            return products.Select(p => new ProductResponse
+            {
+                Id = p.Id,
+                Name = p.Name,
+                Description = p.Description,
+                Quantity = p.Quantity,
+                MainImage = $"{httpRequest.Scheme}://{httpRequest.Host}/images/{ p.MainImage}",
+                SubImagesUrl = p.subImages.Select(img => $"{httpRequest.Scheme}://{httpRequest.Host}/images/{img.ImageName}").ToList()
+            }).ToList();
         }
     }
 }

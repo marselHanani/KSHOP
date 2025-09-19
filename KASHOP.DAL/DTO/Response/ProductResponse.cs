@@ -9,6 +9,7 @@ namespace KASHOP.DAL.DTO.Response
 {
     public class ProductResponse
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
 
@@ -17,6 +18,7 @@ namespace KASHOP.DAL.DTO.Response
         [JsonIgnore]
         public string MainImage { get; set; }
 
-        public string MainImageUrl => $"https://localhost:7029/images/{MainImage}";
+        public string MainImageUrl { get; set; }
+        public List<string> SubImagesUrl { get; set; }
     }
 }

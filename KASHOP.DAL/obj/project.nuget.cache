@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "wFF7Ss0FENc=",
+  "dgSpecHash": "PNxwm2XL1GQ=",
   "success": true,
   "projectFilePath": "/home/marselhanani/Desktop/KSHOP/KASHOP.DAL/KASHOP.DAL.csproj",
   "expectedPackageFiles": [
     "/home/marselhanani/.nuget/packages/azure.core/1.38.0/azure.core.1.38.0.nupkg.sha512",
     "/home/marselhanani/.nuget/packages/azure.identity/1.11.4/azure.identity.1.11.4.nupkg.sha512",
     "/home/marselhanani/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
+    "/home/marselhanani/.nuget/packages/mapster/7.4.0/mapster.7.4.0.nupkg.sha512",
+    "/home/marselhanani/.nuget/packages/mapster.core/1.2.1/mapster.core.1.2.1.nupkg.sha512",
     "/home/marselhanani/.nuget/packages/microsoft.aspnetcore.cryptography.internal/9.0.8/microsoft.aspnetcore.cryptography.internal.9.0.8.nupkg.sha512",
     "/home/marselhanani/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/9.0.8/microsoft.aspnetcore.cryptography.keyderivation.9.0.8.nupkg.sha512",
     "/home/marselhanani/.nuget/packages/microsoft.aspnetcore.http.features/5.0.17/microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",

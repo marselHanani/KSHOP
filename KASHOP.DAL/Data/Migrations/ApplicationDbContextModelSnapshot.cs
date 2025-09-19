@@ -17,7 +17,7 @@ namespace KASHOP.DAL.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "9.0.8")
+                .HasAnnotation("ProductVersion", "9.0.9")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -281,6 +281,28 @@ namespace KASHOP.DAL.Data.Migrations
                     b.ToTable("Products");
                 });
 
+            modelBuilder.Entity("KASHOP.DAL.Models.ProductImage", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ImageName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("ProductImages");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -387,6 +409,17 @@ namespace KASHOP.DAL.Data.Migrations
                     b.Navigation("Category");
                 });
 
+            modelBuilder.Entity("KASHOP.DAL.Models.ProductImage", b =>
+                {
+                    b.HasOne("KASHOP.DAL.Models.Product", "Product")
+                        .WithMany("subImages")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -405,6 +438,11 @@ namespace KASHOP.DAL.Data.Migrations
             modelBuilder.Entity("KASHOP.DAL.Models.Brand", b =>
                 {
                     b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("KASHOP.DAL.Models.Product", b =>
+                {
+                    b.Navigation("subImages");
                 });
 #pragma warning restore 612, 618
         }

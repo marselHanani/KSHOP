@@ -30,5 +30,24 @@ namespace KASHOP.DAL.Repositories.classes
         {
             return await _context.Orders.Include(o => o.User).FirstOrDefaultAsync(o => o.Id == orderId);
         }
+
+        public async Task<List<Order>> GetByStatusAsync(OrderStatusEnum status)
+        {
+            return await _context.Orders.Where((o => o.Status == status)).OrderByDescending(o => o.OrderDate).ToListAsync();
+        }
+
+        public async Task<List<Order>> GetByUserIdAsync(string userId)
+        {
+            return await _context.Orders.Where(o => o.UserId == userId).ToListAsync();
+        }   
+        
+        public async Task<bool> ChangeStatusAsync(int orderId, OrderStatusEnum status)
+        {
+            var order = await _context.Orders.FindAsync(orderId);
+            if (order is null) return false;
+            order.Status = status;
+            await _context.SaveChangesAsync();
+            return true;
+        }
     }
 }
