@@ -1,33 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "/home/marselhanani/Desktop/KSHOP/KASHOP.PL/KASHOP.PL.csproj": {}
+    "C:\\Users\\marselhanane\\Desktop\\KSHOP\\KASHOP.PL\\KASHOP.PL.csproj": {}
   },
   "projects": {
-    "/home/marselhanani/Desktop/KSHOP/KASHOP.BLL/KASHOP.BLL.csproj": {
+    "C:\\Users\\marselhanane\\Desktop\\KSHOP\\KASHOP.BLL\\KASHOP.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/marselhanani/Desktop/KSHOP/KASHOP.BLL/KASHOP.BLL.csproj",
+        "projectUniqueName": "C:\\Users\\marselhanane\\Desktop\\KSHOP\\KASHOP.BLL\\KASHOP.BLL.csproj",
         "projectName": "KASHOP.BLL",
-        "projectPath": "/home/marselhanani/Desktop/KSHOP/KASHOP.BLL/KASHOP.BLL.csproj",
-        "packagesPath": "/home/marselhanani/.nuget/packages/",
-        "outputPath": "/home/marselhanani/Desktop/KSHOP/KASHOP.BLL/obj/",
+        "projectPath": "C:\\Users\\marselhanane\\Desktop\\KSHOP\\KASHOP.BLL\\KASHOP.BLL.csproj",
+        "packagesPath": "C:\\Users\\marselhanane\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marselhanane\\Desktop\\KSHOP\\KASHOP.BLL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/marselhanani/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\marselhanane\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/home/marselhanani/Desktop/KSHOP/KASHOP.DAL/KASHOP.DAL.csproj": {
-                "projectPath": "/home/marselhanani/Desktop/KSHOP/KASHOP.DAL/KASHOP.DAL.csproj"
+              "C:\\Users\\marselhanane\\Desktop\\KSHOP\\KASHOP.DAL\\KASHOP.DAL.csproj": {
+                "projectPath": "C:\\Users\\marselhanane\\Desktop\\KSHOP\\KASHOP.DAL\\KASHOP.DAL.csproj"
               }
             }
           }
@@ -56,6 +62,10 @@
               "target": "Package",
               "version": "[9.0.8, )"
             },
+            "QuestPDF": {
+              "target": "Package",
+              "version": "[2025.7.2, )"
+            },
             "Stripe.net": {
               "target": "Package",
               "version": "[48.5.0, )"
@@ -77,26 +87,32 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/marselhanani/.dotnet/sdk/9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/marselhanani/Desktop/KSHOP/KASHOP.DAL/KASHOP.DAL.csproj": {
+    "C:\\Users\\marselhanane\\Desktop\\KSHOP\\KASHOP.DAL\\KASHOP.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/marselhanani/Desktop/KSHOP/KASHOP.DAL/KASHOP.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\marselhanane\\Desktop\\KSHOP\\KASHOP.DAL\\KASHOP.DAL.csproj",
         "projectName": "KASHOP.DAL",
-        "projectPath": "/home/marselhanani/Desktop/KSHOP/KASHOP.DAL/KASHOP.DAL.csproj",
-        "packagesPath": "/home/marselhanani/.nuget/packages/",
-        "outputPath": "/home/marselhanani/Desktop/KSHOP/KASHOP.DAL/obj/",
+        "projectPath": "C:\\Users\\marselhanane\\Desktop\\KSHOP\\KASHOP.DAL\\KASHOP.DAL.csproj",
+        "packagesPath": "C:\\Users\\marselhanane\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marselhanane\\Desktop\\KSHOP\\KASHOP.DAL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/marselhanani/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\marselhanane\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -164,34 +180,40 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/marselhanani/.dotnet/sdk/9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/marselhanani/Desktop/KSHOP/KASHOP.PL/KASHOP.PL.csproj": {
+    "C:\\Users\\marselhanane\\Desktop\\KSHOP\\KASHOP.PL\\KASHOP.PL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/marselhanani/Desktop/KSHOP/KASHOP.PL/KASHOP.PL.csproj",
+        "projectUniqueName": "C:\\Users\\marselhanane\\Desktop\\KSHOP\\KASHOP.PL\\KASHOP.PL.csproj",
         "projectName": "KASHOP.PL",
-        "projectPath": "/home/marselhanani/Desktop/KSHOP/KASHOP.PL/KASHOP.PL.csproj",
-        "packagesPath": "/home/marselhanani/.nuget/packages/",
-        "outputPath": "/home/marselhanani/Desktop/KSHOP/KASHOP.PL/obj/",
+        "projectPath": "C:\\Users\\marselhanane\\Desktop\\KSHOP\\KASHOP.PL\\KASHOP.PL.csproj",
+        "packagesPath": "C:\\Users\\marselhanane\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marselhanane\\Desktop\\KSHOP\\KASHOP.PL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/marselhanani/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\marselhanane\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/home/marselhanani/Desktop/KSHOP/KASHOP.BLL/KASHOP.BLL.csproj": {
-                "projectPath": "/home/marselhanani/Desktop/KSHOP/KASHOP.BLL/KASHOP.BLL.csproj"
+              "C:\\Users\\marselhanane\\Desktop\\KSHOP\\KASHOP.BLL\\KASHOP.BLL.csproj": {
+                "projectPath": "C:\\Users\\marselhanane\\Desktop\\KSHOP\\KASHOP.BLL\\KASHOP.BLL.csproj"
               }
             }
           }
@@ -254,7 +276,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/marselhanani/.dotnet/sdk/9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

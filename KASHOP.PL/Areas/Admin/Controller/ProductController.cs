@@ -17,7 +17,8 @@ namespace KASHOP.PL.Areas.Admin.Controller
         }
 
         [HttpGet("")]
-        public IActionResult GetALL() => Ok(_service.GetAllProduct(Request));
+        public IActionResult GetALL([FromQuery] int pageNumer = 1, [FromQuery] int pageSize = 5)
+            => Ok(_service.GetAllProduct(Request,false,pageNumer,pageSize));
 
         [HttpPost("Create")]
         public async Task<IActionResult> Create([FromForm] ProductRequest request)

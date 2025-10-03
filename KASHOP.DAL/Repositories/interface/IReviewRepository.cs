@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace KASHOP.DAL.Repositories.Interface
+{
+    public interface IReviewRepository
+    {
+        Task<bool> UserHasReviewedProduct(string userId, int productId);
+        Task AddReviewAsync(DAL.Models.Review review, string userId);
+    }
+}

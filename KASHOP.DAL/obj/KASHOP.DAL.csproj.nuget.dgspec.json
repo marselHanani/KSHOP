@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/home/marselhanani/Desktop/KSHOP/KASHOP.DAL/KASHOP.DAL.csproj": {}
+    "C:\\Users\\marselhanane\\Desktop\\KSHOP\\KASHOP.DAL\\KASHOP.DAL.csproj": {}
   },
   "projects": {
-    "/home/marselhanani/Desktop/KSHOP/KASHOP.DAL/KASHOP.DAL.csproj": {
+    "C:\\Users\\marselhanane\\Desktop\\KSHOP\\KASHOP.DAL\\KASHOP.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/marselhanani/Desktop/KSHOP/KASHOP.DAL/KASHOP.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\marselhanane\\Desktop\\KSHOP\\KASHOP.DAL\\KASHOP.DAL.csproj",
         "projectName": "KASHOP.DAL",
-        "projectPath": "/home/marselhanani/Desktop/KSHOP/KASHOP.DAL/KASHOP.DAL.csproj",
-        "packagesPath": "/home/marselhanani/.nuget/packages/",
-        "outputPath": "/home/marselhanani/Desktop/KSHOP/KASHOP.DAL/obj/",
+        "projectPath": "C:\\Users\\marselhanane\\Desktop\\KSHOP\\KASHOP.DAL\\KASHOP.DAL.csproj",
+        "packagesPath": "C:\\Users\\marselhanane\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marselhanane\\Desktop\\KSHOP\\KASHOP.DAL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/marselhanani/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\marselhanane\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -87,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/marselhanani/.dotnet/sdk/9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -16,6 +16,8 @@ using Scalar;
 using Scalar.AspNetCore;
 using Stripe;
 using System.Text;
+using ReviewService = KASHOP.BLL.Service.classes.ReviewService;
+
 namespace KASHOP.PL
 {
     public class Program
@@ -60,7 +62,9 @@ namespace KASHOP.PL
             builder.Services.AddScoped<IUserService, UserService>();
             builder.Services.AddScoped<IUserRepository, UserRepository>();
             builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
-
+            builder.Services.AddScoped<ReportService>();
+            builder.Services.AddScoped<IReviewService, ReviewService>();
+            builder.Services.AddScoped<IReviewRepository, ReviewRepository>();
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
             {
                 options.Password.RequireDigit = true;

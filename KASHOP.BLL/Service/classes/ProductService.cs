@@ -44,13 +44,16 @@ namespace KASHOP.BLL.Service.classes
             return _productRepository.save(entity);
         }
 
-        public async Task<List<ProductResponse>> GetAllProduct(HttpRequest httpRequest,bool onlyActive = false)
+        public async Task<List<ProductResponse>> GetAllProduct(HttpRequest httpRequest,bool onlyActive = false, int pageNumber = 1, int pageSize =1)
         {
             var products = await _productRepository.GetAllProductsWithImages();
             if (onlyActive)
             {
                 products = products.Where(p => p.Status == Status.Active).ToList();
             }
+
+            var pageProducts = products.Skip((pageNumber - 1) * pageSize);
+
             return products.Select(p => new ProductResponse
             {
                 Id = p.Id,
@@ -58,7 +61,15 @@ namespace KASHOP.BLL.Service.classes
                 Description = p.Description,
                 Quantity = p.Quantity,
                 MainImage = $"{httpRequest.Scheme}://{httpRequest.Host}/images/{ p.MainImage}",
-                SubImagesUrl = p.subImages.Select(img => $"{httpRequest.Scheme}://{httpRequest.Host}/images/{img.ImageName}").ToList()
+                SubImagesUrl = p.subImages.Select(img => $"{httpRequest.Scheme}://{httpRequest.Host}/images/{img.ImageName}").ToList(),
+                Reviews = p.reviews.Select(r => new ReviewResponse
+                {
+                    Id = r.Id,
+                    Rate = r.Rate,
+                    Comment = r.Comment,
+                    FullName = r.User.UserName
+                }).ToList()
+
             }).ToList();
         }
     }

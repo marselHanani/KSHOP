@@ -39,7 +39,9 @@ namespace KASHOP.DAL.Repositories.classes
         public async Task<List<Product>> GetAllProductsWithImages()
         {
             var products = await _context.Products
-                .Include(p => p.subImages).ToListAsync();
+                .Include(p => p.subImages)
+                .Include(x => x.reviews)
+                .ThenInclude(u => u.User).ToListAsync();
             return products;
         }
     }

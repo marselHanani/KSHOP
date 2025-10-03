@@ -49,5 +49,13 @@ namespace KASHOP.DAL.Repositories.classes
             await _context.SaveChangesAsync();
             return true;
         }
+
+
+        public async Task<bool> UserHasApprovedOrderForProduct(string userId, int productId)
+        {
+            return await _context.Orders.Include(o => o.OrderItems)
+                .AnyAsync(o => o.UserId == userId && o.Status == OrderStatusEnum.Approved
+                && o.OrderItems.Any(oi => oi.ProductId == productId));
+        }
     }
 }
