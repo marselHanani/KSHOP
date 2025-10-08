@@ -21,15 +21,4 @@
     <ProjectReference Include="..\KASHOP.BLL\KASHOP.BLL.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="wwwroot\images\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="wwwroot\images\3a470a9a-ee2a-4a95-bb8a-f020a4dcbe0b.jpg" />
-    <None Include="wwwroot\images\b8fea316-3b55-420e-b88e-c5ce98478f79.jpg" />
-    <None Include="wwwroot\images\e8056b48-1813-4fd7-a781-16f8e89c50e0.jpg" />
-    <None Include="wwwroot\images\fb41a151-3490-4220-9923-55ad3028d27b.jpg" />
-  </ItemGroup>
-
 </Project>

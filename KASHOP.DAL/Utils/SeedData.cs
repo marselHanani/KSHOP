@@ -41,12 +41,71 @@ namespace KASHOP.DAL.Utils
             if (!await _context.Brands.AnyAsync())
             {
                 await _context.Brands.AddRangeAsync(
-                    new Models.Brand { Name = "Samsung", CreatedAt = DateTime.Now, Status = Models.Status.Active,ImageUrl = "3a470a9a-ee2a-4a95-bb8a-f020a4dcbe0b.jpg"},
-                    new Models.Brand { Name = "Apple", CreatedAt = DateTime.Now, Status = Models.Status.Active,ImageUrl = "92bd52bd-9230-4fe8-b8e0-32d8c9b7bb1d.jpg"},
-                    new Models.Brand { Name = "Nike", CreatedAt = DateTime.Now, Status = Models.Status.Active,ImageUrl = "fb41a151-3490-4220-9923-55ad3028d27b.jpg"}
+                    new Models.Brand { Name = "Samsung", CreatedAt = DateTime.Now, Status = Models.Status.Active,ImageUrl = "adidas.png"},
+                    new Models.Brand { Name = "Apple", CreatedAt = DateTime.Now, Status = Models.Status.Active,ImageUrl = "Nike.png"},
+                    new Models.Brand { Name = "Nike", CreatedAt = DateTime.Now, Status = Models.Status.Active,ImageUrl = "puma.png"}
                 );
                 await _context.SaveChangesAsync();
             }
+
+            if (!await _context.Products.AnyAsync())
+            {
+                var electronicsCategory = await _context.Categories.FirstOrDefaultAsync(c => c.Name == "Electronics");
+                var clothingCategory = await _context.Categories.FirstOrDefaultAsync(c => c.Name == "Clothing");
+                var homeAppliancesCategory =
+                    await _context.Categories.FirstOrDefaultAsync(c => c.Name == "Home Appliances");
+
+                var samsungBrand = await _context.Brands.FirstOrDefaultAsync(b => b.Name == "Samsung");
+                var appleBrand = await _context.Brands.FirstOrDefaultAsync(b => b.Name == "Apple");
+                var nikeBrand = await _context.Brands.FirstOrDefaultAsync(b => b.Name == "Nike");
+
+                await _context.Products.AddRangeAsync(
+                    new Product
+                    {
+                        Name = "Adidas Shoos",
+                        Description = "Latest Samsung smartphone with advanced camera features",
+                        Price = 999.99m,
+                        Discount = 0m,
+                        MainImage = "adidas_sh.jpeg",
+                        Quantity = 50,
+                        Rate = 4.7,
+                        CategoryId = electronicsCategory?.Id,
+                        BrandId = samsungBrand?.Id,
+                        CreatedAt = DateTime.Now,
+                        Status = Status.Active
+                    },
+                    new Product
+                    {
+                        Name = "iPhone 15 Pro",
+                        Description = "Powerful Apple smartphone with A17 chip",
+                        Price = 1099.99m,
+                        Discount = 50m,
+                        MainImage = "nike_sh.jpeg",
+                        Quantity = 30,
+                        Rate = 4.8,
+                        CategoryId = electronicsCategory?.Id,
+                        BrandId = appleBrand?.Id,
+                        CreatedAt = DateTime.Now,
+                        Status = Status.Active
+                    },
+                    new Product
+                    {
+                        Name = "Nike Air Max",
+                        Description = "Comfortable running shoes with air cushioning",
+                        Price = 129.99m,
+                        Discount = 20m,
+                        MainImage = "puma_sh.jpeg",
+                        Quantity = 100,
+                        Rate = 4.5,
+                        CategoryId = clothingCategory?.Id,
+                        BrandId = nikeBrand?.Id,
+                        CreatedAt = DateTime.Now,
+                        Status = Status.Active
+                    }
+            );
+                await _context.SaveChangesAsync();
+            }
+            
             await _context.SaveChangesAsync();
         }
 
