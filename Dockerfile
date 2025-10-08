@@ -1,25 +1,31 @@
-# ===============================
+﻿# ===============================
 # STEP 1: Build the application
 # ===============================
-FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-# Copy csproj and restore dependencies
+# انسخ ملفات الحل بالكامل
+COPY *.sln ./
 COPY KSHOP.PL/*.csproj ./KSHOP.PL/
-RUN dotnet restore KSHOP.PL/KSHOP.PL.csproj
+COPY KSHOP.DAL/*.csproj ./KSHOP.DAL/
+COPY KSHOP.BLL/*.csproj ./KSHOP.BLL/
 
-# Copy everything and build
+# استعادة الحزم
+RUN dotnet restore
+
+# انسخ كل الملفات
 COPY . .
+
+# بناء المشروع
 RUN dotnet publish KSHOP.PL/KSHOP.PL.csproj -c Release -o /app/publish
 
 # ===============================
-# STEP 2: Run the application
+# STEP 2: Runtime
 # ===============================
-FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS final
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
 WORKDIR /app
 COPY --from=build /app/publish .
 
-# Tell Render what port to expose
 ENV ASPNETCORE_URLS=http://+:10000
 EXPOSE 10000
 
